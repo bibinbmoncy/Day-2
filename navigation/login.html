@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Kerala Tourism</title>
+  </head>
+  <!--------------------------------navbar----------------------------------->
+  <body class="loginbody color-change-2x">
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #458da6">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/landingPage/logo kt.png"
+              alt="Logo"
+              width="100"
+              height="50"
+              class="d-inline-block align-text-center text-white"
+            />
+            Kerala Tourism
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item p-2">
+                <a class="nav-link" href="./loginValidated.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-----------------------------form------------------------------->
+    <div class="container">
+      <div class="container1 mx-auto">
+        <form action="./loginValidated.html">
+          <!-------form heading-------------->
+          <div class="heading p-3">
+            <h3>Login</h3>
+          </div>
+          <!---------------email---------------------->
+          <div class="col-12 mb-3 p-2">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input
+              type="email1"
+              class="form-control"
+              placeholder="Email address"
+              id="email1"
+              onkeyup="validateEmail() "
+            />
+            <span id="email1-error"></span>
+          </div>
+          <!----------------------password----------------------->
+          <div class="col-12 mb-3 p-2">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Password"
+              id="password"
+              onkeyup="validatePassword()"
+            />
+            <span id="password-error"></span>
+          </div>
+          <br />
+          <br />
+          <!--------------login button------------------------->
+          <button
+            type="submit"
+            onclick="return validateForm()"
+            class="btn btn-primary mb-3 p-2 login"
+          >
+            Login
+          </button>
+          <br />
+          <br />
+          <h6 class="need p-2">Need an Account?</h6>
+          <a href="./signup.html" style="color: red; padding: 10px">Sign up</a>
+          <br />
+          <br />
+        </form>
+      </div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+  <script src="login.js"></script>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Kerala Tourism</title>
+  </head>
+  <body class="signupbody color-change-2x">
+    <!----------------------navbar------------------------------->
+    <header>
+      <nav class="navbar navbar-expand-lg" style="background-color: #458da6">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img
+              src="../images/landingPage/logo kt.png"
+              alt="Logo"
+              width="100"
+              height="50"
+              class="d-inline-block align-text-center text-white"
+            />
+            Kerala Tourism
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item p-2">
+                <a class="nav-link" href="../index.html">Home</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container2 mx-auto">
+      <!--------------------form ------------------------>
+      <form>
+        <div class="heading1 p-3">
+          <h3>Sign Up</h3>
+        </div>
+      </form>
+      <form class="row g-3" action="./login.html">
+        <!--------------username-------------------------->
+        <div class="col-12">
+          <label for="username" class="form-label">Username</label>
+          <input
+            id="username"
+            type="name"
+            class="form-control"
+            placeholder="Job Steve"
+            onkeyup="validateUsername()"
+          />
+          <span id="name-error"></span>
+        </div>
+        <!------------------------email------------------>
+        <div class="col-12">
+          <label for="inputEmail4" class="form-label">Email</label>
+          <input
+            type="email1"
+            class="form-control"
+            placeholder="Email Address"
+            id="email1"
+            onkeyup="validateEmail() "
+          />
+          <span id="email1-error"></span>
+        </div>
+        <!-------------------password------------------------------->
+        <div class="col-12">
+          <label for="inputPassword4" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Password"
+            id="password"
+            onkeyup="validatePassword()"
+          />
+          <span id="password-error"></span>
+          <br />
+          <!------------password strength meter-------------------->
+          <span id="StrengthDisp" class="badge displayBadge">Weak</span>
+          <br />
+        </div>
+        <!-----------------confirm password------------------------>
+        <div class="col-12">
+          <label for="confirmPassword" class="form-label"
+            >Confirm Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Re-type your password"
+            id="confirmPassword"
+            onkeyup="validateCPassword()"
+          />
+          <span id="cpassword-error"></span>
+        </div>
+        <!---------------phone number------------------------------->
+        <div class="col-12">
+          <label for="inputPhone4" class="form-label">Phone Number</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Phone number"
+            id="phone"
+            onkeyup="validatePhone()"
+          />
+          <span id="phone-error"></span>
+        </div>
+        <br />
+        <!--------------submit button------------------------------------>
+        <div class="me-5">
+          <button
+            type="submit"
+            class="btn btn-primary signup"
+            onclick="return formValidation()"
+          >
+            Sign in
+          </button>
+          <br />
+        </div>
+        <br />
+        <h6 class="need">Already have an Account?</h6>
+        <a href="./login.html" style="color: red">LogIn</a>
+        <br />
+      </form>
+    </div>
+    <!--------------------form end------------------------------------------->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <script src="signup.js"></script>
+  </body>
+</html>
